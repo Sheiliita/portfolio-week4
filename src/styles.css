@@ -52,3 +52,7 @@ p {
   line-height: 27px;
   padding: 18px 30px;
 }
+
+.btn-branding:hover {
+  background: var(--branding-color);
+}
