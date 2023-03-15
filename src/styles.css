@@ -110,4 +110,8 @@ p {
     padding: 0;
     text-align: center;
   }
+  .mobile-img {
+    max-width: 320px;
+    margin: 0 auto;
+  }
 }
