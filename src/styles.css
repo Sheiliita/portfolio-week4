@@ -5,7 +5,10 @@
   --default-font-family: "Poppins", sans-serif;
   --shadow-hover: 7px 5px 5px #dfdada;
 }
-
+html,
+body {
+  overflow-x: hidden;
+}
 body {
   font-family: var(--default-font-family);
 }
@@ -15,8 +18,12 @@ h2 {
   font-family: var(--heading-font-family);
 }
 
-h1 {
+h1.huge {
   font-size: 96px;
+}
+
+h1 {
+  font-size: 80px;
 }
 
 h2 {
@@ -30,13 +37,16 @@ p {
   line-height: 30px;
 }
 
-.hero {
+.purple {
+  background: var(--secondary-color);
+}
+.hero-container {
   background: var(--secondary-color);
   text-align: center;
   padding: 160px 20px;
 }
 
-.hero p {
+.hero-container p {
   font-family: var(--default-font-family);
   font-weight: bold;
   font-size: 36px;
@@ -44,11 +54,20 @@ p {
   color: #272142;
 }
 
-.hero h2 {
+.hero-container h2,
+.about-section h2 {
   font-family: var(--default-font-family);
   font-weight: normal;
   line-height: 2;
   font-size: 24px;
+}
+
+.about-section p.subheader {
+  font-family: var(--default-font-family);
+  font-weight: bold;
+  font-size: 36px;
+  margin: 0;
+  color: #272142;
 }
 
 .btn-branding {
@@ -87,11 +106,50 @@ p {
 .title-projects {
   font-size: 25px;
 }
+
+/* About page */
+.about-page #hero {
+  padding: 200px 0;
+}
+
+img.heart-icon {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: -82px;
+}
+img.portrait {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  right: -100px;
+  bottom: 0;
+}
+
+#footer a.link {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0;
+  color: #272142;
+  text-decoration: none;
+}
+#footer i {
+  color: #6c63ff;
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
 @media (max-width: 960px) {
-  body {
+  h1.huge {
+    font-size: 75px;
+    text-align: center;
   }
   h1 {
-    font-size: 75px;
+    font-size: 55px;
     text-align: center;
   }
   h2 {
@@ -113,5 +171,13 @@ p {
   .mobile-img {
     max-width: 320px;
     margin: 0 auto;
+  }
+
+  .about-page #hero {
+    text-align: center;
+    padding: 40px 0;
+  }
+  #footer a.link {
+    font-size: 16px;
   }
 }
