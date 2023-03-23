@@ -144,6 +144,40 @@ img.portrait {
   align-items: center;
   border-radius: 50%;
 }
+.contact-item {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  max-width: 100%;
+}
+.contact-info,
+a {
+  text-decoration: none;
+  color: #272142;
+  font-weight: bold;
+}
+#contact-forms .contact-icon .fa-icon {
+  color: #6c63ff;
+  width: 60px;
+  height: 60px;
+  margin: 0 5px;
+  font-size: 35px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+form button {
+  padding: 10px 30px;
+  background: var(--branding-color);
+  border-radius: 4px;
+  color: white;
+  line-height: 27px;
+  border: none;
+}
+form button:hover {
+  cursor: pointer;
+  background: var(--branding-color);
+}
 @media (max-width: 960px) {
   h1 {
     font-size: 75px;

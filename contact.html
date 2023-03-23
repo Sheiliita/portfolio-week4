@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://kit.fontawesome.com/5ecb0613d5.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Yeseva+One&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Document</title>
+  </head>
+  <body class="contact-page">
+    <section id="hero">
+      <div class="hero-container">
+        <h1 class="huge">Let's Work Together!</h1>
+        <h2>I’ll help you by all my best!</h2>
+      </div>
+    </section>
+    <section id="contact-forms" class="pt-5 pb-5">
+      <div class="container">
+        <div class="row gap-3 align-items-center justify-content-center">
+          <div class="col-12 col-lg-4 w-auto justify-content-center">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fa-icon fa fa-solid fa-envelope d-flex purple"></i>
+              </div>
+              <div class="contact-info">
+                <p class="title-icons m-0">Email</p>
+                <p class="m-0"><a href="mailto:sheila.sanchez.2020@gmail.com">sheila.sanchez.2020@gmail.com</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item mt-4">
+              <div class="contact-icon">
+                <i class="fa-icon fa fa-solid fa-phone d-flex purple"></i>
+              </div>
+              <div class="contact-info">
+                <p class="title-icons m-0">Phone</p>
+                <a class="m-0" href="tel:305-926-3836">(305) 926-3836</a>
+              </div>
+            </div>
+
+            <div class="contact-item mt-4">
+              <div class="contact-icon">
+                <i class="fa-icon fa fa-solid fa-location-dot d-flex purple"></i>
+              </div>
+              <div class="contact-info">
+                <p class="title-icons m-0">Location</p>
+                <p class="m-0 fw-bold">Jacksonville, US</p>
+              </div>
+            </div>
+          </div>
+          <!-- Form section -->
+          <div class="col-12 col-md-8 mt-5 mb-3 rounded p-5 purple">
+            <p class="text-center text-muted mb-4">Thank you for taking the time to learn more about me and my work. If you have any questions or would like to discuss a project, please don't hesitate to reach out.</p>
+            <form>
+              <div class="row">
+                <div class="col-12 col-lg-6 mt-4">
+                  <label for="first-name" class="form-label">First Name</label>
+                  <input type="text" id="inputFirstName" class="form-control" placeholder="Enter your first name" />
+                </div>
+                <div class="col-12 col-lg-6 mt-4">
+                  <label for="last-name" class="form-label">Last Name</label>
+
+                  <input type="text" id="inputLastName" class="form-control" placeholder="Enter your last name..." />
+                </div>
+
+                <div class="col-12 col-lg-6 mt-4">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email..." required />
+                </div>
+                <div class="col-12 col-lg-6 mt-4">
+                  <label for="phone-number" class="form-label">Phone Number</label>
+                  <input type="tel" class="form-control" id="inputPhoneNumber" placeholder="Enter your phone number..." required />
+                </div>
+                <div class="col-12 mt-4 d-flex justify-content-end">
+                  <button type="submit">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
