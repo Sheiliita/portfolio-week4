@@ -51,6 +51,7 @@ nav.navbar {
   color: var(--branding-color);
   transition: all 100ms ease-in-out;
 }
+
 .purple {
   background: var(--secondary-color);
 }
@@ -191,6 +192,12 @@ form button {
 form button:hover {
   cursor: pointer;
   background: var(--branding-color);
+}
+
+footer .email-link:hover {
+  cursor: pointer;
+  color: var(--branding-color);
+  font-size: 20px;
 }
 @media (max-width: 960px) {
   h1 {
